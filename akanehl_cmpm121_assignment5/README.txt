@@ -1,15 +1,10 @@
-This project was made by Aaron Kanehl and submitted 2/5/19. It satisfies the requirements of CMPM 121 assignment 3. 
+This project was created to satisfy the requirements for UCSC CMPM 121, Winter 2019. 
 
-CONTROLS: 
-W: Move Forward	
-A: Move Left
-S: Move Backward
-D: Move Right
+Controls
+W: Move Forward
+A: Rotate left
+D: Rotate Right
+S: Move Backwards
 
-F: Trigger Flashlight
-
-The first room gives a security camera like effect, using the LookAt method, and the hallway gives a top down tracking move, that is locked along the x axis. The last room switches to a cinematic shot with baked lights that light the room corners. 
-
-KNOWN NEEDED FIXES
----------------------------------------------------------
-Lighting could be improved, need to mess with values more and tweak some issues with the lighting, figure out dynamic lighting without 'bounce shadows?'
+Instrutions: If not loaded, please load Title Scene, and then press z to play. The game will then move to the MainLevel Scene, where you must collect 10 key cards to win, upon which
+the game will move back to the title scene. 
