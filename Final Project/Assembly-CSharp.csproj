@@ -105,7 +105,10 @@
     <Compile Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Runtime\Utils\ReflectionUtils.cs" />
     <Compile Include="Assets\Adam Character Pack\PostProcessing\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\MyScripts\BandicootCam.cs" />
+    <Compile Include="Assets\MyScripts\deathNetCollider.cs" />
+    <Compile Include="Assets\MyScripts\levelEnding.cs" />
     <Compile Include="Assets\MyScripts\Pickup.cs" />
+    <Compile Include="Assets\MyScripts\StairColider.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
