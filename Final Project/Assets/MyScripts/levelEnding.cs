@@ -5,12 +5,13 @@ using UnityEngine;
 public class levelEnding : MonoBehaviour
 {
     public GameObject player;
-    private float level;
     public Camera main;
     public GameObject deathNet;
+    public static int level = 0;
+
     void Start()
     {
-        level = 0;
+       
         
 
     }
@@ -19,8 +20,6 @@ public class levelEnding : MonoBehaviour
     void Update()
     {
         transform.Rotate(new Vector3(15, 30, 45) * Time.deltaTime);
-
-
     }
 
     void OnTriggerEnter(Collider other)
@@ -28,14 +27,14 @@ public class levelEnding : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             this.gameObject.SetActive(false);
-            levelUp(level);
+            levelUp();
         }
     }
 
-    void levelUp(float l)
+    void levelUp()
     {
         level++;
-        Vector3 newLevel = new Vector3(level * 25, 0, 0);
+        Vector3 newLevel = new Vector3(level *25, 0, 0);
         player.transform.position = newLevel;
         main.GetComponent<BandicootCam>().incrementLevel();
         deathNet.GetComponent<deathNetCollider>().incrementLevel();

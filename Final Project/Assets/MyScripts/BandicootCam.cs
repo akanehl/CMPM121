@@ -29,7 +29,7 @@ public class BandicootCam : MonoBehaviour
             zOnly = new Vector3(level, player.transform.position.y + 3, player.transform.position.z + offset);
         }
         transform.position = zOnly;
-        Debug.Log(unlockYAxis);
+        
     }
 
     public void unlockY()
